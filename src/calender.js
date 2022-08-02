@@ -7,12 +7,26 @@ import "react-big-calendar/lib/css/react-big-calendar.css";
 
 const localizer = momentLocalizer(moment);
 const DnDCalendar = withDragAndDrop(Calendar);
+const events = [
+    {
+      id: 0,
+      title: 'All Day Event very long title',
+      allDay: true,
+      start: new Date(2022, 2, 13, 0, 0, 0),
+      end: new Date(2022, 2, 20, 0, 0, 0),
+    },
+]
 
 class MyCalendar extends Component {
 
   render() {
     return (
       <div className="App">
+        <DnDCalendar
+            localizer={localizer}
+            events={events}
+            draggableAccessor={(event) => true}
+        />
         <DnDCalendar
           defaultDate={moment().toDate()}
           defaultView="week"
