@@ -6,7 +6,30 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+.CalenderDiv {
+  margin:30px;
+}
+.rbc-header{
+  height:60px;
+}
+.rbc-timeslot-group {
+  min-height:80px!important;
+ 
+}
+.rbc-timeslot-group .rbc-time-slot{
+  width: 120px;
+  text-align: center;
+  font-size: 14px;
+}
+.rbc-calendar{
+  border-top: 5px solid cornflowerblue;
+  padding-top: 20px;
+}
+.rbc-toolbar button:active, .rbc-toolbar button.rbc-active,.rbc-toolbar button:hover{
+  background: cornflowerblue!important;
+  color: white;
+  font-weight: bold;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
