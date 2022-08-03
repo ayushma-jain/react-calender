@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "reach-calender-3a72e"
-  }
+    "default": "reach-calender-3a72e",
+    "staging": "reach-calender-3a72e"
+  },
+  "targets": {},
+  "etags": {}
 }
