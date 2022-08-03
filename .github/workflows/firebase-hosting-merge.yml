@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          repoToken: '${{ secrets.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 }}'
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_REACH_CALENDER_3A72E }}'
           channelId: live
           projectId: reach-calender-3a72e
