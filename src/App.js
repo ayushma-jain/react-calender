@@ -1,15 +1,18 @@
 import './App.css';
+import Navbar from './components/Navbar';
+import Calender from './components/Calender';
 
-import MyCalendar from './calender';
+
+
+//import MyCalendar from './calender';
 
 // import moment from 'moment'
-
 const App = () => {
     return (
-        <div  className="CalenderDiv">
-            <MyCalendar></MyCalendar>
-        </div> 
+        <>
+            <Navbar />
+            <Calender />
+        </>
     )
 }    
-
 export default App;
